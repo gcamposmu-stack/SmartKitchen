@@ -38,4 +38,5 @@ Para los commits usamos mensajes en español que describen claramente qué se hi
 - docs: actualizar README
 
 Repositorio: https://github.com/gcamposmu-stack/SmartKitchen
+
 Local machine/VCS terminal clone: git clone https://github.com/gcamposmu-stack/SmartKitchen.git
