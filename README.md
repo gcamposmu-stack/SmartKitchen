@@ -2,7 +2,7 @@
 
 SmartKitchen es una plataforma web colaborativa para descubrir, gestionar y planificar recetas culinarias. Los usuarios pueden buscar recetas según sus ingredientes disponibles, presupuesto y preferencias dietéticas, mientras que chefs y expertos pueden publicar y gestionar su propio contenido. El sistema también incluye un planificador de menús semanal con lista de compras automática.
 
-Este proyecto fue desarrollado como parte del curso Diseño y Programación Web (SOFT-06) de la Universidad CENFOTEC, periodo 2026-C2.
+Este proyecto esta desarrollado como parte del proyecto final del curso Diseño y Programación Web (SOFT-06) de la Universidad CENFOTEC, periodo 2026-C2.
 
 **-- Grupo 2 --**
 
