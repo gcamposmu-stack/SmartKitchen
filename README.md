@@ -1,17 +1,17 @@
-**-- Proyecto culinario SmartKitchen --**
+## Proyecto culinario SmartKitchen ##
 
 SmartKitchen es una plataforma web colaborativa para descubrir, gestionar y planificar recetas culinarias. Los usuarios pueden buscar recetas según sus ingredientes disponibles, presupuesto y preferencias dietéticas, mientras que chefs y expertos pueden publicar y gestionar su propio contenido. El sistema también incluye un planificador de menús semanal con lista de compras automática.
 
 Este proyecto esta desarrollado como parte del proyecto final del curso Diseño y Programación Web (SOFT-06) de la Universidad CENFOTEC, periodo 2026-C2.
 
-**-- Grupo 2 --**
+## Grupo 2 ## 
 
 - José Andrés Rodríguez Palma — Líder de Proyecto
 - Greivin Campos Murillo — Desarrollador Frontend
 - Johnny Florindo Coto Jiménez — Diseñador UI/UX
 - Luis Alejandro Garita Piedra — Desarrollador Frontend
 
-**-- Alcance --**
+## Alcance ##
 
 El proyecto cubre únicamente el desarrollo frontend de las siguientes áreas:
 
@@ -23,7 +23,7 @@ El proyecto cubre únicamente el desarrollo frontend de las siguientes áreas:
 - Panel de administración para gestión de categorías y moderación de contenido.
 - El mismo se hace en un entrega con wireframe de baja fidelidad pero luego seria modificada a alta.
 
-**-- Cómo trabajamos en GitHub --**
+## Cómo trabajamos en GitHub ##
 
 Usamos tres tipos de branches:
 
