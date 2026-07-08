@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartKitchen - Mis Recetas</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <header>
+        <span class="logo">Smart<span>Kitchen</span></span>
+        <span class="user-info">Chef Juan 👨‍🍳</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mis-recetas.html" class="active">Mis Recetas</a></li>
+            <li><a href="crear-receta.html">Crear Receta</a></li>
+            <li><a href="verificar.html">Verificar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="page-title">
+            <span class="user-badge chef">Chef / Experto Culinario</span>
+            <h1>Gestion de Mis Recetas</h1>
+            <p>Administra, edita y publica tus recetas.</p>
+        </div>
+
+        <section>
+            <h2>Mis Recetas</h2>
+            <div class="btn-group">
+                <a href="crear-receta.html" class="btn btn-primary">+ Nueva Receta</a>
+                <a href="verificar.html" class="btn btn-secondary">Validar Recetas Pendientes</a>
+            </div>
+            <br>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre de la Receta</th>
+                            <th>Estado</th>
+                            <th>Ultima Modificacion</th>
+                            <th>Calificacion</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pasta Carbonara</td>
+                            <td><span class="status-badge status-publicada">Publicada</span></td>
+                            <td>01/06/2026</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>
+                                <a href="crear-receta.html" class="btn btn-secondary btn-sm">Editar</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiramisu clasico</td>
+                            <td><span class="status-badge status-borrador">Borrador</span></td>
+                            <td>10/06/2026</td>
+                            <td class="stars">—</td>
+                            <td>
+                                <a href="crear-receta.html" class="btn btn-secondary btn-sm">Editar</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tacos de Pollo</td>
+                            <td><span class="status-badge status-revisar">Revisar</span></td>
+                            <td>15/06/2026</td>
+                            <td class="stars">★★★★★</td>
+                            <td>
+                                <a href="crear-receta.html" class="btn btn-secondary btn-sm">Editar</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ensalada Mediterranea</td>
+                            <td><span class="status-badge status-publicada">Publicada</span></td>
+                            <td>20/06/2026</td>
+                            <td class="stars">★★★☆☆</td>
+                            <td>
+                                <a href="crear-receta.html" class="btn btn-secondary btn-sm">Editar</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sopa de Mariscos</td>
+                            <td><span class="status-badge status-borrador">Borrador</span></td>
+                            <td>25/06/2026</td>
+                            <td class="stars">—</td>
+                            <td>
+                                <a href="crear-receta.html" class="btn btn-secondary btn-sm">Editar</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="form-note" style="margin-top: 10px;">* Estado "Revisar" indica que la receta tiene comentarios pendientes de otro chef verificador.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartKitchen &copy; 2026 — Grupo 2 — SOFT-06 CENFOTEC</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartKitchen - Crear Receta</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <header>
+        <span class="logo">Smart<span>Kitchen</span></span>
+        <span class="user-info">Chef Juan 👨‍🍳</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mis-recetas.html">Mis Recetas</a></li>
+            <li><a href="crear-receta.html" class="active">Crear Receta</a></li>
+            <li><a href="verificar.html">Verificar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="page-title">
+            <span class="user-badge chef">Chef / Experto Culinario</span>
+            <h1>Nueva Receta</h1>
+            <p>Completa el formulario para publicar tu receta en SmartKitchen.</p>
+        </div>
+
+        <section>
+            <h2>Informacion General</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre-receta">Nombre de la receta *</label>
+                    <input type="text" id="nombre-receta" name="nombre" placeholder="Ej. Pasta Carbonara clasica" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripcion breve *</label>
+                    <textarea id="descripcion" name="descripcion" placeholder="Describe tu receta en pocas palabras..." required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tipo">Tipo de receta *</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="desayuno">Desayuno</option>
+                            <option value="almuerzo">Almuerzo</option>
+                            <option value="cena">Cena</option>
+                            <option value="postre">Postre</option>
+                            <option value="snack">Snack</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dificultad">Dificultad *</label>
+                        <select id="dificultad" name="dificultad" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="facil">Facil</option>
+                            <option value="medio">Medio</option>
+                            <option value="dificil">Dificil</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tiempo">Tiempo estimado (min) *</label>
+                        <input type="number" id="tiempo" name="tiempo" placeholder="Ej. 30" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="costo">Presupuesto estimado por porcion (₡) *</label>
+                    <input type="number" id="costo" name="costo" placeholder="Ej. 3500" required>
+                    <p class="form-note">Incluye el costo total de ingredientes dividido entre las porciones.</p>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Ingredientes</h2>
+            <form>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ingrediente</th>
+                                <th>Cantidad</th>
+                                <th>Costo estimado (₡)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" placeholder="Ej. Pasta"></td>
+                                <td><input type="text" placeholder="Ej. 400g"></td>
+                                <td><input type="number" placeholder="Ej. 1800"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="Ej. Huevos"></td>
+                                <td><input type="text" placeholder="Ej. 4 unidades"></td>
+                                <td><input type="number" placeholder="Ej. 800"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="Ej. Tocino"></td>
+                                <td><input type="text" placeholder="Ej. 150g"></td>
+                                <td><input type="number" placeholder="Ej. 2200"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="btn btn-secondary" style="margin-top: 10px;">+ Agregar ingrediente</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Instrucciones</h2>
+            <form>
+                <div class="form-group">
+                    <label for="paso1">Paso 1 *</label>
+                    <input type="text" id="paso1" placeholder="Describe el primer paso...">
+                </div>
+                <div class="form-group">
+                    <label for="paso2">Paso 2</label>
+                    <input type="text" id="paso2" placeholder="Describe el segundo paso...">
+                </div>
+                <div class="form-group">
+                    <label for="paso3">Paso 3</label>
+                    <input type="text" id="paso3" placeholder="Describe el tercer paso...">
+                </div>
+                <button type="button" class="btn btn-secondary">+ Agregar paso</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Imagen</h2>
+            <form>
+                <div class="form-group">
+                    <label for="imagen">Subir imagen de la receta</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                    <p class="form-note">Formatos aceptados: JPG, PNG. Tamano maximo: 5MB.</p>
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-primary">Publicar Receta</button>
+                    <button type="button" class="btn btn-secondary">Guardar Borrador</button>
+                    <a href="mis-recetas.html" class="btn btn-danger">Cancelar</a>
+                </div>
+                <p class="form-note" style="margin-top: 8px;">* Campos obligatorios para publicar.</p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartKitchen &copy; 2026 — Grupo 2 — SOFT-06 CENFOTEC</p>
+    </footer>
+
+</body>
+</html>
