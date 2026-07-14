@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartKitchen - Verificar Recetas</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <header>
+        <span class="logo">Smart<span>Kitchen</span></span>
+        <span class="user-info">Chef Juan 👨‍🍳</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mis-recetas.html">Mis Recetas</a></li>
+            <li><a href="crear-receta.html">Crear Receta</a></li>
+            <li><a href="verificar.html" class="active">Verificar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="page-title">
+            <span class="user-badge chef">Chef / Experto Culinario</span>
+            <h1>Verificar Recetas Pendientes</h1>
+            <p>Revisa y aprueba o rechaza recetas subidas por usuarios.</p>
+        </div>
+
+        <section>
+            <h2>Recetas en Espera</h2>
+            <div class="alert alert-info">
+                Hay 3 recetas pendientes de verificacion.
+            </div>
+            <div class="cards-grid">
+
+                <article class="card">
+                    <div class="card-img-placeholder">Sin imagen</div>
+                    <div class="card-body">
+                        <h3>Arroz con Leche</h3>
+                        <p>Por: usuario1@correo.com</p>
+                        <p>Categoria: Postre</p>
+                        <p>Dificultad: Facil</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary btn-sm">Aprobar</button>
+                            <button class="btn btn-danger btn-sm">Rechazar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder">Sin imagen</div>
+                    <div class="card-body">
+                        <h3>Ceviche Tropical</h3>
+                        <p>Por: usuario2@correo.com</p>
+                        <p>Categoria: Almuerzo</p>
+                        <p>Dificultad: Medio</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary btn-sm">Aprobar</button>
+                            <button class="btn btn-danger btn-sm">Rechazar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder">Sin imagen</div>
+                    <div class="card-body">
+                        <h3>Smoothie Verde</h3>
+                        <p>Por: usuario3@correo.com</p>
+                        <p>Categoria: Desayuno</p>
+                        <p>Dificultad: Facil</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary btn-sm">Aprobar</button>
+                            <button class="btn btn-danger btn-sm">Rechazar</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Vista Previa de Receta</h2>
+            <p>Selecciona una receta para revisar su detalle antes de aprobar o rechazar.</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Arroz con Leche</td>
+                        </tr>
+                        <tr>
+                            <td>Ingredientes</td>
+                            <td>Arroz, leche, azucar, canela</td>
+                        </tr>
+                        <tr>
+                            <td>Instrucciones</td>
+                            <td>Paso 1: Hervir el arroz... Paso 2: Agregar leche...</td>
+                        </tr>
+                        <tr>
+                            <td>Costo por porcion</td>
+                            <td>₡1,200</td>
+                        </tr>
+                        <tr>
+                            <td>Tiempo</td>
+                            <td>40 min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-group" style="margin-top: 16px; max-width: 500px;">
+                <label for="comentario-rechazo">Motivo de rechazo (si aplica):</label>
+                <textarea id="comentario-rechazo" placeholder="Describe el motivo por el que se rechaza la receta..."></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary">Aprobar Receta</button>
+                <button class="btn btn-danger">Rechazar y Notificar</button>
+                <button class="btn btn-secondary">Solicitar Cambios</button>
+            </div>
+            <p class="form-note" style="margin-top: 8px;">* Al rechazar se enviara una notificacion automatica al usuario con los motivos indicados.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartKitchen &copy; 2026 — Grupo 2 — SOFT-06 CENFOTEC</p>
+    </footer>
+
+</body>
+</html>

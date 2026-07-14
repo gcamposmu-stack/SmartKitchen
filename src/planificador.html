@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartKitchen - Planificador</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <header>
+        <span class="logo">Smart<span>Kitchen</span></span>
+        <span class="user-info">Hola, Usuario 👋</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscar.html">Recetas</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="planificador.html" class="active">Planificador</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="page-title">
+            <span class="user-badge usuario">Usuario Regular</span>
+            <h1>Planificador de Comidas Semanal</h1>
+            <p>Organiza tus comidas de la semana y genera tu lista de compras automaticamente.</p>
+        </div>
+
+        <section>
+            <h2>Menu de la Semana</h2>
+            <div class="planificador-grid">
+
+                <div class="plan-header"></div>
+                <div class="plan-header">Lun</div>
+                <div class="plan-header">Mar</div>
+                <div class="plan-header">Mie</div>
+                <div class="plan-header">Jue</div>
+                <div class="plan-header">Vie</div>
+                <div class="plan-header">Sab</div>
+                <div class="plan-header">Dom</div>
+
+                <div class="plan-meal-label">Desayuno</div>
+                <div class="plan-cell filled">Avena con frutas</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell filled">Huevos revueltos</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell filled">Pancakes</div>
+                <div class="plan-cell">+ Agregar</div>
+
+                <div class="plan-meal-label">Almuerzo</div>
+                <div class="plan-cell filled">Arroz con pollo</div>
+                <div class="plan-cell filled">Tacos de pollo</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell filled">Ensalada Cesar</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell filled">Pasta Carbonara</div>
+
+                <div class="plan-meal-label">Cena</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell filled">Sopa de tomate</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell filled">Tiramisu</div>
+                <div class="plan-cell">+ Agregar</div>
+                <div class="plan-cell">+ Agregar</div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Resumen de Presupuesto</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="presupuesto">Presupuesto semanal (₡)</label>
+                    <input type="number" id="presupuesto" placeholder="Ej. 30000">
+                </div>
+                <div class="form-group">
+                    <label>Total calculado</label>
+                    <input type="text" value="₡21,500" readonly>
+                </div>
+            </div>
+            <div class="alert alert-success">
+                El presupuesto esta dentro del limite establecido.
+            </div>
+        </section>
+
+        <section>
+            <h2>Lista de Compras</h2>
+            <div class="alert alert-info">
+                Lista generada automaticamente segun las recetas del planificador.
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingrediente</th>
+                            <th>Cantidad</th>
+                            <th>Costo estimado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pollo</td>
+                            <td>500g</td>
+                            <td>₡3,200</td>
+                        </tr>
+                        <tr>
+                            <td>Arroz</td>
+                            <td>1kg</td>
+                            <td>₡1,500</td>
+                        </tr>
+                        <tr>
+                            <td>Pasta</td>
+                            <td>400g</td>
+                            <td>₡1,800</td>
+                        </tr>
+                        <tr>
+                            <td>Tomate</td>
+                            <td>4 unidades</td>
+                            <td>₡800</td>
+                        </tr>
+                        <tr>
+                            <td>Lechuga</td>
+                            <td>1 unidad</td>
+                            <td>₡600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-primary">Generar lista completa</button>
+                <button class="btn btn-secondary">Guardar semana</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartKitchen &copy; 2026 — Grupo 2 — SOFT-06 CENFOTEC</p>
+    </footer>
+
+</body>
+</html>
