@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartKitchen - Detalle de Receta</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <header>
+        <span class="logo">Smart<span>Kitchen</span></span>
+        <span class="user-info">Hola, Usuario 👋</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscar.html" class="active">Recetas</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="planificador.html">Planificador</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="page-title">
+            <h1>Pasta Carbonara</h1>
+            <p class="stars">★★★★☆ &nbsp; 24 opiniones</p>
+        </div>
+
+        <section>
+            <h2>Ingredientes y Costos</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingrediente</th>
+                            <th>Cantidad</th>
+                            <th>Costo estimado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pasta</td>
+                            <td>400g</td>
+                            <td>₡1,800</td>
+                        </tr>
+                        <tr>
+                            <td>Huevos</td>
+                            <td>4 unidades</td>
+                            <td>₡800</td>
+                        </tr>
+                        <tr>
+                            <td>Tocino</td>
+                            <td>150g</td>
+                            <td>₡2,200</td>
+                        </tr>
+                        <tr>
+                            <td>Queso parmesano</td>
+                            <td>100g</td>
+                            <td>₡3,500</td>
+                        </tr>
+                        <tr>
+                            <td>Pimienta negra</td>
+                            <td>Al gusto</td>
+                            <td>₡200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="margin-top: 10px; font-weight: 600;">Costo por porcion: ₡3,500</p>
+        </section>
+
+        <section>
+            <h2>Instrucciones Paso a Paso</h2>
+            <ol style="padding-left: 20px; color: var(--color-text);">
+                <li style="margin-bottom: 10px;">Cocinar la pasta en agua con sal hasta que este al dente.</li>
+                <li style="margin-bottom: 10px;">Freir el tocino en una sarten hasta que este dorado.</li>
+                <li style="margin-bottom: 10px;">Mezclar los huevos con el queso parmesano en un recipiente.</li>
+                <li style="margin-bottom: 10px;">Escurrir la pasta y mezclarla con el tocino fuera del fuego.</li>
+                <li style="margin-bottom: 10px;">Agregar la mezcla de huevos y queso, revolver rapidamente.</li>
+                <li style="margin-bottom: 10px;">Servir inmediatamente con pimienta al gusto.</li>
+            </ol>
+
+            <div class="btn-group">
+                <a href="favoritos.html" class="btn btn-primary">Guardar en Favoritos</a>
+                <a href="planificador.html" class="btn btn-secondary">Agregar al Planificador</a>
+                <button class="btn btn-accent">Crear Version Personalizada</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Comentarios</h2>
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
+                <article style="background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 12px;">
+                    <p><strong>Usuario1:</strong> Excelente receta, quedo perfecta la primera vez que la hice.</p>
+                    <p class="stars" style="font-size: 0.8rem;">★★★★★</p>
+                </article>
+                <article style="background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 12px;">
+                    <p><strong>Usuario2:</strong> Muy buena pero le agregue un poco de crema para que quedara mas suave.</p>
+                    <p class="stars" style="font-size: 0.8rem;">★★★★☆</p>
+                </article>
+                <article style="background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 12px;">
+                    <p><strong>Usuario3:</strong> Sencilla y deliciosa. La recomiendo.</p>
+                    <p class="stars" style="font-size: 0.8rem;">★★★★★</p>
+                </article>
+            </div>
+
+            <div class="form-group" style="max-width: 500px;">
+                <label for="nuevo-comentario">Agregar comentario:</label>
+                <textarea id="nuevo-comentario" placeholder="Escribe tu opinion sobre esta receta..."></textarea>
+                <button class="btn btn-primary" style="margin-top: 8px;">Publicar comentario</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartKitchen &copy; 2026 — Grupo 2 — SOFT-06 CENFOTEC</p>
+    </footer>
+
+</body>
+</html>

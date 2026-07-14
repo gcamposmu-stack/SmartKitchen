@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartKitchen - Inicio</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <header>
+        <span class="logo">Smart<span>Kitchen</span></span>
+        <span class="user-info">Hola, Usuario 👋</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="buscar.html">Recetas</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+            <li><a href="planificador.html">Planificador</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="page-title">
+            <span class="user-badge usuario">Usuario Regular</span>
+            <h1>Bienvenido a SmartKitchen</h1>
+            <p>Descubre, guarda y planifica tus recetas favoritas.</p>
+        </div>
+
+        <section>
+            <h2>Buscar Recetas</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar por nombre, ingrediente o categoria..." aria-label="Buscar recetas">
+                <a href="buscar.html" class="btn btn-primary">Buscar</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Recetas Destacadas</h2>
+            <div class="cards-grid">
+
+                <article class="card">
+                    <div class="card-img-placeholder">Sin imagen</div>
+                    <div class="card-body">
+                        <h3>Pasta Carbonara</h3>
+                        <div class="card-meta">
+                            <span>20 min</span>
+                            <span>₡3,500</span>
+                        </div>
+                        <p class="stars">★★★★☆</p>
+                        <div class="card-actions">
+                            <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver receta</a>
+                            <a href="favoritos.html" class="btn btn-secondary btn-sm">Guardar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder">Sin imagen</div>
+                    <div class="card-body">
+                        <h3>Tacos de Pollo</h3>
+                        <div class="card-meta">
+                            <span>30 min</span>
+                            <span>₡4,000</span>
+                        </div>
+                        <p class="stars">★★★★★</p>
+                        <div class="card-actions">
+                            <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver receta</a>
+                            <a href="favoritos.html" class="btn btn-secondary btn-sm">Guardar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder">Sin imagen</div>
+                    <div class="card-body">
+                        <h3>Ensalada César</h3>
+                        <div class="card-meta">
+                            <span>15 min</span>
+                            <span>₡2,800</span>
+                        </div>
+                        <p class="stars">★★★★☆</p>
+                        <div class="card-actions">
+                            <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver receta</a>
+                            <a href="favoritos.html" class="btn btn-secondary btn-sm">Guardar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder">Sin imagen</div>
+                    <div class="card-body">
+                        <h3>Sopa de Tomate</h3>
+                        <div class="card-meta">
+                            <span>25 min</span>
+                            <span>₡2,200</span>
+                        </div>
+                        <p class="stars">★★★☆☆</p>
+                        <div class="card-actions">
+                            <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver receta</a>
+                            <a href="favoritos.html" class="btn btn-secondary btn-sm">Guardar</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Menu Semanal</h2>
+            <p>Planifica tus comidas de la semana y genera tu lista de compras.</p>
+            <div class="btn-group">
+                <a href="planificador.html" class="btn btn-primary">Ir al Planificador</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartKitchen &copy; 2026 — Grupo 2 — SOFT-06 CENFOTEC</p>
+        <p><a href="../README.md">Ver README</a></p>
+    </footer>
+
+</body>
+</html>

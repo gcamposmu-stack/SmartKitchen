@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartKitchen - Mis Favoritos</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <header>
+        <span class="logo">Smart<span>Kitchen</span></span>
+        <span class="user-info">Hola, Usuario 👋</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscar.html">Recetas</a></li>
+            <li><a href="favoritos.html" class="active">Favoritos</a></li>
+            <li><a href="planificador.html">Planificador</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="page-title">
+            <span class="user-badge usuario">Usuario Regular</span>
+            <h1>Mis Colecciones y Favoritos</h1>
+            <p>Organiza tus recetas guardadas en colecciones personales.</p>
+        </div>
+
+        <section>
+            <h2>Mis Colecciones</h2>
+            <div class="btn-group">
+                <button class="btn btn-primary">+ Nueva Coleccion</button>
+            </div>
+            <br>
+            <div class="cards-grid">
+
+                <article class="card">
+                    <div class="card-img-placeholder">Coleccion</div>
+                    <div class="card-body">
+                        <h3>Desayunos rapidos</h3>
+                        <p>5 recetas guardadas</p>
+                        <div class="card-actions">
+                            <a href="buscar.html" class="btn btn-primary btn-sm">Ver coleccion</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder">Coleccion</div>
+                    <div class="card-body">
+                        <h3>Postres favoritos</h3>
+                        <p>3 recetas guardadas</p>
+                        <div class="card-actions">
+                            <a href="buscar.html" class="btn btn-primary btn-sm">Ver coleccion</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-placeholder">Coleccion</div>
+                    <div class="card-body">
+                        <h3>Cenas saludables</h3>
+                        <p>7 recetas guardadas</p>
+                        <div class="card-actions">
+                            <a href="buscar.html" class="btn btn-primary btn-sm">Ver coleccion</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Recetas Guardadas</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Calificacion</th>
+                            <th>Coleccion</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pasta Carbonara</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Cenas saludables</td>
+                            <td>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver receta</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tacos de Pollo</td>
+                            <td class="stars">★★★★★</td>
+                            <td>Desayunos rapidos</td>
+                            <td>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver receta</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tiramisu</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Postres favoritos</td>
+                            <td>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver receta</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ensalada Cesar</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Cenas saludables</td>
+                            <td>
+                                <a href="detalle-receta.html" class="btn btn-primary btn-sm">Ver receta</a>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-group" style="margin-top: 20px; max-width: 500px;">
+                <label for="notas">Notas personales sobre la receta seleccionada:</label>
+                <textarea id="notas" placeholder="Escribe aqui tus notas o modificaciones..."></textarea>
+                <button class="btn btn-secondary" style="margin-top: 8px;">Guardar nota</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartKitchen &copy; 2026 — Grupo 2 — SOFT-06 CENFOTEC</p>
+    </footer>
+
+</body>
+</html>
