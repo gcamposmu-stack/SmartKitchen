@@ -6,8 +6,8 @@ Este proyecto esta desarrollado como parte del proyecto final del curso Diseño 
 
 **Grupo 2**
 
-- José Andrés Rodríguez Palma — Líder de Proyecto
-- Greivin Campos Murillo — Desarrollador Frontend
+- Greivin Campos Murillo — Líder de Proyecto
+- José Andrés Rodríguez Palma — Desarrollador Frontend
 - Johnny Florindo Coto Jiménez — Diseñador UI/UX
 - Luis Alejandro Garita Piedra — Desarrollador Frontend
 
