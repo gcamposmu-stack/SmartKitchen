@@ -51,4 +51,42 @@ Para los commits usamos mensajes en español que describen claramente qué se hi
 - fix: corregir filtro de búsqueda
 - docs: actualizar README
 
-Repositorio: https://github.com/gcamposmu-stack/SmartKitchen
+## Cómo ejecutar el proyecto
+
+1. Clonar el repositorio:
+   git clone https://github.com/gcamposmu-stack/SmartKitchen.git
+
+2. Entrar a la carpeta src:
+   cd SmartKitchen/src
+
+3. Abrir login.html en el navegador — desde ahí se navega a todas las pantallas.
+
+No se requiere servidor ni dependencias. Es frontend puro en HTML, CSS y JavaScript.
+
+Credenciales de prueba:
+- Usuario regular: usuario@smartkitchen.com / usuario123
+- Chef: chef@smartkitchen.com / chef123
+- Admin: admin@smartkitchen.com / admin123
+
+## Funcionalidades JavaScript implementadas (Avance III)
+
+1. login.js — Login simulado con roles (usuario/chef/admin), validación de correo y contraseña
+2. buscar.js — Búsqueda en tiempo real y filtros por categoría, dificultad y presupuesto
+3. crear-receta.js — Validación completa del formulario, agregar/eliminar ingredientes y pasos dinámicamente
+4. mis-recetas.js — Eliminar recetas de la lista con confirmación y actualización del DOM
+5. favoritos.js — Eliminar favoritos, crear colecciones y guardar notas personales
+6. verificar.js — Aprobar y rechazar recetas con validación del motivo de rechazo
+7. planificador.js — Planificador semanal interactivo con cálculo de presupuesto y lista de compras
+8. detalle-receta.js — Publicar comentarios y guardar recetas en favoritos
+
+## Estructura de archivos JS
+
+src/js/
+├── login.js
+├── buscar.js
+├── crear-receta.js
+├── mis-recetas.js
+├── favoritos.js
+├── verificar.js
+├── planificador.js
+└── detalle-receta.js
