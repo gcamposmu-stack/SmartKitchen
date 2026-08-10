@@ -80,7 +80,7 @@ Credenciales de prueba:
 8. detalle-receta.js — Publicar comentarios y guardar recetas en favoritos
 
 ## Estructura de archivos JS
-
+```
 src/js/
 ├── login.js
 ├── buscar.js
@@ -90,3 +90,4 @@ src/js/
 ├── verificar.js
 ├── planificador.js
 └── detalle-receta.js
+```
