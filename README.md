@@ -32,7 +32,7 @@ Los estilos estan organizados en tres modulos dentro de src/css: base.css para v
 
 **Estructura del repositorio**
 
-- src/ contiene todos los archivos HTML y la carpeta css/ con los estilos
+- src/ contiene todos los archivos HTML y la carpeta css/ con los estilos y JS dinamico.
 - docs/ contiene el PDF de wireframes del Avance I
 
 **Cómo trabajamos en GitHub**
