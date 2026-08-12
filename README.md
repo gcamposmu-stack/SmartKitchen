@@ -22,9 +22,7 @@ El proyecto cubre únicamente el desarrollo frontend de las siguientes áreas:
 - Sistema de calificaciones, comentarios y comunidad entre usuarios.
 - Panel de administración para gestión de categorías y moderación de contenido.
 
-**Lo construido hasta ahora (Avance II), pero pendiente de la tercera entrega**
-
-Se implementaron 8 pantallas funcionales en HTML y CSS navegables entre si, cubriendo dos tipos de usuario:
+Se implementaron 9 pantallas funcionales en HTML y CSS navegables entre si, cubriendo dos tipos de usuario:
 
 Usuario Regular — index.html, buscar.html, favoritos.html, planificador.html, detalle-receta.html
 
@@ -68,7 +66,7 @@ Credenciales de prueba:
 - Chef: chef@smartkitchen.com / chef123
 - Admin: admin@smartkitchen.com / admin123
 
-## Funcionalidades JavaScript implementadas (Avance III)
+## Funcionalidades JavaScript implementadas 
 
 1. login.js — Login simulado con roles (usuario/chef/admin), validación de correo y contraseña
 2. buscar.js — Búsqueda en tiempo real y filtros por categoría, dificultad y presupuesto
